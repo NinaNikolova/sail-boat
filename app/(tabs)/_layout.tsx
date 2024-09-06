@@ -1,37 +1,34 @@
+import { View, Text } from 'react-native'
+import React from 'react'
 import { Tabs } from 'expo-router';
-import React from 'react';
+import Colors from '@/constants/Colors';
 
-import { TabBarIcon } from '@/components/navigation/TabBarIcon';
-import { Colors } from '@/constants/Colors';
-import { useColorScheme } from '@/hooks/useColorScheme';
+import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
+import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 
-export default function TabLayout() {
-  const colorScheme = useColorScheme();
-
-  return (
-    <Tabs
-      screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
-        headerShown: false,
-      }}>
-      <Tabs.Screen
-        name="index"
-        options={{
-          title: 'Home',
-          tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'home' : 'home-outline'} color={color} />
-          ),
-        }}
-      />
-      <Tabs.Screen
-        name="explore"
-        options={{
-          title: 'Explore',
-          tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'code-slash' : 'code-slash-outline'} color={color} />
-          ),
-        }}
-      />
-    </Tabs>
-  );
+const TabsLayout = () => {
+    return (
+        <Tabs screenOptions={{ headerShown: false, tabBarActiveTintColor: Colors.primary }} >
+            <Tabs.Screen name="tips-tricks" options={{
+                tabBarLabel: "Tips&Tricks",
+                tabBarIcon: () => (
+                    <MaterialIcons name="tips-and-updates" size={24} color="yellow" />
+                )
+            }} />
+            <Tabs.Screen name="day-skipper" options={{
+                tabBarLabel: "Day Skipper",
+                tabBarIcon: () => (
+                    <MaterialCommunityIcons name="account-tie-hat" size={24} color="lightblue" />
+                )
+            }} />
+            <Tabs.Screen name="competent-crew" options={{
+                tabBarLabel: "Competent Crew",
+                tabBarIcon: () => (
+                    <MaterialCommunityIcons name="tshirt-crew" size={24} color="gray" />
+                )
+            }} />
+        </Tabs>
+    )
 }
+
+export default TabsLayout;

@@ -1,50 +1,54 @@
-# Welcome to your Expo app 👋
+# SailSpace App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+- The purpuse: simplifying sailing with sail boat and check on your phone what to do when you are on boat at any time. Тhe project is still under construction ...
 
-## Get started
+## 📋 <a name="table">Table of Contents</a>
 
-1. Install dependencies
+1. 🤖 [Introduction](#introduction)
+2. ⚙️ [Tech Stack](#tech-stack)
+3. 🔋 [Features](#features)
+4. 🤸 [Quick Start](#quick-start)
 
-   ```bash
-   npm install
-   ```
+## 🚨 Tutorial;
 
-2. Start the app
+## <a name="introduction">🤖 Introduction</a>
 
-   ```bash
-    npx expo start
-   ```
+Built with React Native to deliver seamless user experiences, this app features a clean design utilizing FlatLists, Linear Gradients, modals, tab bars, icons, and file-based routing with Expo Router.
 
-In the output, you'll find options to open the app in a
+## <a name="tech-stack">⚙️ Tech Stack</a>
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- React Native
+- Expo
+- NativeWind
+- JavaScript
+- TypeScript
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## <a name="features">🔋 Features</a>
 
-## Get a fresh project
+👉 **Onboarding Screen**: Welcome screen with a linear gradient to help users get started with the app.
 
-When you're ready, run:
+👉 **Meditation List Screen with Flat List**: A flat list displays previews of various meditations with corresponding images.
+
+👉 **Audio Playing Capability**: Control audio playback and manage a meditation countdown timer.
+
+👉 **Tab Navigation**: Navigate between sections like the Meditation Screen and Affirmations screen with ease using tab navigation.
+
+👉 **Responsiveness**: Smooth performance and adaptability across various devices and screen sizes for a consistent user experience.
+
+and many more, including code architecture and reusability
+
+## <a name="quick-start">🤸 Quick Start</a>
 
 ```bash
-npm run reset-project
+npm install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+**Running the Project**
 
-## Learn more
+```bash
+npx expo start
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+**Expo Go**
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Download the [Expo Go](https://expo.dev/go) app onto your device, then use it to scan the QR code from Terminal and run.
