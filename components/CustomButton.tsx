@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, Pressable, TouchableOpacity } from "react-native";
+import { View, Text, Pressable } from "react-native";
 
 interface CustomButtonProps {
     onPress: () => void;
@@ -16,11 +16,6 @@ const CustomButton = ({
 }: CustomButtonProps) => {
     return (
         <Pressable
-            style={({ pressed }) => [
-                'bg-white rounded-xl min-h-[62px] justify-center items-center',
-                pressed ? 'opacity-70' : 'opacity-100', // Mimicking activeOpacity
-                containerStyles
-            ]}
             className={`bg-white rounded-xl min-h-[62px] justify-center items-center ${containerStyles} `}
             onPress={onPress}
         >

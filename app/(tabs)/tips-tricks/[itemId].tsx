@@ -24,7 +24,7 @@ const Page = () => {
             if (tipsData.id === Number(itemId)) {
 
                 setTipsHelp(tipsData);
-                console.log(tipsData);
+
                 const tipsArray = tipsData.text.split(".");
                 if (tipsArray[tipsArray.length - 1] === '') {
                     tipsArray.pop();
