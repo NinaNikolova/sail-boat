@@ -24,7 +24,7 @@ const App = () => {
               <Text className='text-center text-white text-regular text-2xl mt-3'>Simplifying Sailing for Everyone</Text>
             </View>
             <View>
-              <CustomButton onPress={() => router.push("/tips-tricks")} title='Get Started' />
+              <CustomButton onPress={() => router.push("/(tabs)/tips")} title='Get Started' />
             </View>
             <StatusBar style="light" />
           </SafeAreaView>
