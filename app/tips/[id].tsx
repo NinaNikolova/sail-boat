@@ -6,9 +6,9 @@ import { AntDesign } from "@expo/vector-icons";
 // import { Audio } from "expo-av";
 import CustomButton from "@/components/CustomButton";
 
-import TIPS_TRICKS_IMAGES from "@/constants/tips-tricks-images";
+import { TIPS_TRICKS_IMAGES } from "@/constants/tips-tricks-images";
 // import { TimerContext } from "@/context/TimerContext";
-import { MEDITATION_DATA, AUDIO_FILES } from "@/constants/MeditationData";
+import { TIPS_TRICKS_DATA, AUDIO_FILES } from "@/constants/tips-tricks";
 
 const Page = () => {
     const { id } = useLocalSearchParams();
@@ -52,7 +52,7 @@ const Page = () => {
     }, [audioSound]);
 
     const initializeSound = async () => {
-        const audioFileName = MEDITATION_DATA[Number(id) - 1].audio;
+        const audioFileName = TIPS_TRICKS_DATA[Number(id) - 1].audio;
 
         const { sound } = await Audio.Sound.createAsync(
             AUDIO_FILES[audioFileName]
@@ -98,7 +98,7 @@ const Page = () => {
     return (
         <View className="flex-1">
             <ImageBackground
-                source={MEDITATION_IMAGES[Number(id) - 1]}
+                source={TIPS_TRICKS_IMAGES[Number(id) - 1]}
                 resizeMode="cover"
                 className="flex-1"
             >
