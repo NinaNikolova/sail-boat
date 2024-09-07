@@ -27,7 +27,7 @@ const Tipstricks = () => {
                         renderItem={({ item }) => (
                             <Pressable
                                 onPress={() =>
-                                    router.push(`/tips/${item.id}`)
+                                    router.push(`/tips/${item.id - 1}`)
                                 }
                                 className="h-48 my-3 rounded-md overflow-hidden"
                             >
